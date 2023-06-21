@@ -1,6 +1,6 @@
-// import "./App.css";
+import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
-import Button from "./components/Button/Button";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <div>
         <h1>Market App</h1>
         <Navbar />
-        <Button />
+        <ItemListContainer message="Bienvenido" name="Yablo!" />
       </div>
     </>
   );

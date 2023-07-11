@@ -18,7 +18,7 @@ const ItemList = ({data}) => {
   return (
     <Box>
       <Grid container spacing={2}>
-        <Grid item xs={5}>
+        <Grid item xs={4}>
           {data.map((x) => {
             return (
               <Item key={x.id}>

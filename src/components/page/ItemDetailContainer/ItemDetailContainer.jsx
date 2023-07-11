@@ -2,10 +2,11 @@ import {useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
 import ItemDetail from "../ItemDetail/ItemDetail";
 
+const apiURL = "https://fakestoreapi.com/products";
+
 const ItemDetailContainer = () => {
   const {productoid} = useParams();
   const [item, setItem] = useState();
-  const apiURL = "https://fakestoreapi.com/products";
 
   useEffect(() => {
     fetch(apiURL)

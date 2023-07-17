@@ -1,5 +1,6 @@
 import {useState} from "react";
 
+//clase 10, eventos.
 const Checkout = () => {
   const [data, setData] = useState({
     nombre: "",

@@ -1,9 +1,15 @@
 
 import ItemListContainer from './../components/page/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './../components/page/ItemDetailContainer/ItemDetailContainer';
-import Checkout from './../components/common/Checkout/Checkout';
+import CartContainer from './../components/page/Cart/CartContainer';
+import CounterContainer from '../components/common/Counter/CounterContainer';
 
 const routes = [
+    {
+        id: "home",
+        path: "*",
+        Element: ItemListContainer
+    },
     {
         id: "home",
         path: "/",
@@ -22,12 +28,12 @@ const routes = [
     {
         id: "home",
         path: "/carrito",
-        Element: Checkout
+        Element: CartContainer
     },
     {
-        id: "home",
-        path: "*",
-        Element: ItemListContainer
+        id: "counter",
+        path: "/counter",
+        Element: CounterContainer
     }
 ]
 

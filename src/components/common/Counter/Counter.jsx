@@ -1,23 +1,22 @@
+/* eslint-disable react/prop-types */
 //useState
-import {useState} from "react";
+import {Button} from "@mui/material";
+import {Typography} from "@mui/material";
 
-const Counter = () => {
-  const [counter, setCounter] = useState(1);
-
-  const suma = () => {
-    setCounter(counter + 1);
-  };
-  const resta = () => {
-    setCounter(counter - 1);
-  };
-
+const Counter = ({counter, sumar, restar, onAdd}) => {
   return (
-    <>
-      <h3>Contador</h3>
-      <h3>El contador esta en {counter} </h3>
-      <button onClick={suma}>Suma</button>
-      <button onClick={resta}>Resta</button>
-    </>
+    <div>
+      <Button variant="outlined" size="small" onClick={sumar}>
+        Add
+      </Button>
+      <Button variant="outlined" size="small" onClick={restar}>
+        Subtract
+      </Button>
+      <Typography variant="h6"> {counter} </Typography>
+      <Button variant="outlined" size="small" onClick={onAdd}>
+        Add to Cart
+      </Button>
+    </div>
   );
 };
 

@@ -1,6 +1,8 @@
 /* eslint-disable react/prop-types */
 import {Button, Card, CardActions, CardContent, CardMedia, Typography} from "@mui/material";
 import {Link} from "react-router-dom";
+// eslint-disable-next-line no-unused-vars
+import {Skeleton} from "@mui/material"; //loading screen, completar
 
 const ItemCard = ({product: item}) => {
   return (

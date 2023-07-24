@@ -7,6 +7,7 @@ import {Link} from "react-router-dom";
 import Avatar from "@mui/material/Avatar";
 
 const navbar = () => {
+  let userRol = "admin";
   return (
     <Box
       sx={{
@@ -38,6 +39,10 @@ const navbar = () => {
         <Link to="/category/women's clothing">
           <Button>Women's Clothing</Button>
         </Link>
+        <Link to="/dashboard">
+          <Button>Dashboard</Button>
+        </Link>
+        {userRol === "admin" && <Link to="dashboard">ADMIN</Link>}
         <CartWidget />
       </ButtonGroup>
     </Box>

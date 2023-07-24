@@ -60,6 +60,7 @@ const CartContextProvider = ({children}) => {
     return product?.quantity;
   };
 
+  //armar las funciones que faltan
   let data = {cart, addToCart, deleteFromCart, clearCart, isInCart, getTotalPrice, getTotalQuantity, getQuantityById};
 
   return <CartContext.Provider value={data}>{children}</CartContext.Provider>;

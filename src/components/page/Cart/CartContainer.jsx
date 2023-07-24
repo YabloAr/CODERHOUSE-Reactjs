@@ -2,6 +2,7 @@ import {useContext} from "react";
 import CartContext from "../../../context/CartContext";
 import {Button} from "@mui/material";
 import AddIcon from "@mui/icons-material/Send";
+import {Link} from "react-router-dom";
 
 const CartContainer = () => {
   const {cart, addToCart, deleteFromCart, clearCart, isInCart, getTotalPrice} = useContext(CartContext);
@@ -26,6 +27,9 @@ const CartContainer = () => {
       <Button variant="contained" endIcon={<AddIcon />} onClick={() => clearCart()}>
         Add to Cart
       </Button>
+      <Link to="/checkout">
+        <Button>Finalizar la compra</Button>
+      </Link>
     </div>
   );
 };

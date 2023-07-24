@@ -5,6 +5,7 @@ import Box from "@mui/material/Box";
 import CartWidget from "../../common/CartWidget/CartWidget";
 import {Link} from "react-router-dom";
 import Avatar from "@mui/material/Avatar";
+import Dashboard from "../../page/Dashboard/Dashboard";
 
 const navbar = () => {
   return (
@@ -38,7 +39,12 @@ const navbar = () => {
         <Link to="/category/women's clothing">
           <Button>Women's Clothing</Button>
         </Link>
-        <CartWidget />
+        <Link to="/checkout">
+          <CartWidget />
+        </Link>
+        <Link to="/dashboard">
+          <Dashboard />
+        </Link>
       </ButtonGroup>
     </Box>
   );

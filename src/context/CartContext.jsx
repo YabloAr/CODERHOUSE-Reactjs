@@ -55,6 +55,8 @@ const CartContextProvider = ({children}) => {
 
   const getQuantityById = (id) => {
     const product = cart.find((elem) => elem.id === id);
+    /* The `product?.quantity` is using the optional chaining operator (`?.`) to access the
+    `quantity` property of the `product` object. */
     return product?.quantity;
   };
 
